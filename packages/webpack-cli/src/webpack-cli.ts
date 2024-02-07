@@ -76,7 +76,9 @@ interface Information {
 }
 
 class WebpackCLI implements IWebpackCLI {
+  /** 命令行颜色配置 */
   colors: WebpackCLIColors;
+  /** 命令行日志配置 */
   logger: WebpackCLILogger;
   isColorSupportChanged: boolean | undefined;
   builtInOptionsCache: WebpackCLIBuiltInOption[] | undefined;
